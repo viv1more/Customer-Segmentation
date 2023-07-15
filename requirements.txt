@@ -1,0 +1,31 @@
+# Importing all the required libraries
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import seaborn as sns
+import datetime, nltk, warnings
+import matplotlib.cm as cm
+import itertools
+from pathlib import Path
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_samples, silhouette_score
+from sklearn import preprocessing, model_selection, metrics, feature_selection
+from sklearn.model_selection import GridSearchCV, learning_curve
+from sklearn.svm import SVC
+from sklearn.metrics import confusion_matrix
+from sklearn import neighbors, linear_model, svm, tree, ensemble
+from wordcloud import WordCloud, STOPWORDS
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.decomposition import PCA
+from IPython.display import display, HTML
+import plotly
+import plotly.graph_objs as go
+from plotly.offline import init_notebook_mode,iplot
+init_notebook_mode(connected=True)
+warnings.filterwarnings("ignore")                                    # Ignoring the warnings
+plt.rcParams["patch.force_edgecolor"] = True                         # Setting the default style of Matplotlib
+plt.style.use('fivethirtyeight')
+mpl.rc('patch', edgecolor = 'dimgray', linewidth=1)
+%matplotlib inline
